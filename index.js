@@ -17,6 +17,11 @@ app.use(express.json());
 app.use(cors());
 
 
+    app.get("/", function(req,res){
+        res.json({
+            uspesno:true
+        });
+    });
 //PostAPI
     app.get("/api/posts", async function(req,res){
         try{
