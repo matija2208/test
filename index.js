@@ -17,11 +17,10 @@ app.use(express.json());
 app.use(cors());
 
 
-    app.get("/", function(req,res){
-        res.json({
-            uspesno:true
-        });
-    });
+app.get("/:file", function(req,res){
+    var file=req.params.file;
+    res.sendFile('/home/smorovs/test/files/' + file);
+});
 //PostAPI
     app.get("/api/posts", async function(req,res){
         try{
