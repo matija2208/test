@@ -4,7 +4,7 @@ const connect_baza = require("./baza/baza");
 const post = require("./baza/post");
 const user = require("./baza/user");
 const cors = require("cors");
-const PORT = 80;
+const PORT = 3000;
 
 app.listen(PORT, () => {
     console.log(`Server slusa na portu: ${PORT}`);
